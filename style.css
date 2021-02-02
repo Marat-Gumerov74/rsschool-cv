@@ -1,0 +1,210 @@
+/* reset styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 5px 0 10px 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+/* Specifying box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set the basic default settings for the body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(img/table.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 1024px;
+  display: flex;
+}
+
+.left-menu {
+  width: 300px;
+  min-height: 100vh;
+  padding: 0;
+  margin-left: 40px;
+  background-color: rgba(238, 240, 241, 0.507);
+}
+
+.widget-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  white-space: nowrap;
+  position: fixed;
+  min-height: 100vh;
+  margin-left: 25px;
+  border-left: 2px solid rgba(34, 36, 20, 0.507);
+  list-style: none;
+
+}
+
+a {
+  text-transform: uppercase;
+  display: block;
+  width: 90%;
+  height: 100%;
+  margin: 20px 5px;
+  margin-left: 15px;
+  padding: 10px 5px;
+  left:0;
+  right:0;
+  font-size: 16px;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(194, 194, 194, 0.507);
+  border-top: 1px solid rgba(34, 36, 20, 0.507);
+  border-bottom: 1px solid rgba(34, 36, 20, 0.507);
+}
+
+/* Main block */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  min-height: 100%;
+  padding: 0;
+  margin-left: 80px;
+  list-style: none;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.main-title {
+  margin-top: 55px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(238, 240, 241, 0.507);
+}
+
+.h1 .persone {
+  margin: 20px auto;
+  font: inherit;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  color: rgba(34, 34, 34, 0.657);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 110px;
+  padding: 10px;
+  align-items: center;
+  min-width: 100%;
+  min-height: 30%;
+  background-color: rgba(238, 240, 241, 0.507);
+
+}
+.main-list {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.list-item {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2px solid rgba(34, 36, 20, 0.507);
+}
+
+.persone-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aravar {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+.main-title {
+  position: sticky;
+  top: 0;
+}
+
+.text {
+  margin: 10px 10px 10px 20px;
+  text-align: left;
+  word-break: break-all;
+  font-size: 14px;
+  text-transform: none;
+  white-space: pre-line;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.indication-wraper {
+   display: flex;
+}
+
+.modeCarusel {
+  font-size: 12px;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.modeCarusel-on {
+  justify-content: flex-start;
+}
+
+.indication {
+  width: 200px;
+  margin: auto;
+  background-color: none;
+}
+
+.indication-small {
+  width: 0px;
+  align-content: flex-end;
+  background-color: none;
+  transition: 1s;
+}
